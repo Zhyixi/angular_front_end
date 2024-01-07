@@ -1,50 +1,57 @@
-<style>
-    /* 在這裡添加你的 CSS 規則 */
-    h1 {
-        color: black;
-        font-size: 2em;
-        text-align: center;
-    }
-    #angular_icon {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自訂標題樣</title>
+    <style>
+        /* 在這裡添加你的 CSS 規則 */
+        h1 {
+            color: black;
+            font-size: 2em;
+            text-align: center;
+        }
+        #angular_icon {
+            position: relative;
+            top: 100%;
+            left: 1%;
+            width: 5%;
+        }
+      
+        /* 使用更具體的選擇器 */
+        .CodeBlock {
+            color: red;
+            font-size: 16px;
+            background-color: rgba(211, 211, 211, 0.966);
+            padding: 15px;
+        }
+
+        /* 只應用於標有 styledDiv 類別的直接子元素 */
+        .CodeBlock > p {
+            color: black;
+            font-weight: bold;
+        }
+        /* 使用更具體的選擇器 */
+        .ContentBlock {
+            color: black(187, 22, 22, 0.89);
+            font-size: 16px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* 只應用於標有 styledDiv 類別的直接子元素 */
+        .ContentBlock > p {
+            color: black;
+        }
+        .ContentBlock > img {
+        width: auto;
+        height: auto;
         position: relative;
-        top: 100%;
-        left: 1%;
-        width: 5%;
-    }
-    
-    /* 使用更具體的選擇器 */
-    .CodeBlock {
-        color: red;
-        font-size: 16px;
-        background-color: rgba(211, 211, 211, 0.966);
-        padding: 15px;
+        display: block; /* 添加这行以确保垂直居中效果 */
     }
 
-    /* 只應用於標有 styledDiv 類別的直接子元素 */
-    .CodeBlock > p {
-        color: black;
-        font-weight: bold;
-    }
-    /* 使用更具體的選擇器 */
-    .ContentBlock {
-        color: black(187, 22, 22, 0.89);
-        font-size: 16px;
-        background-color: white;
-        padding: 10px;
-    }
-
-    /* 只應用於標有 styledDiv 類別的直接子元素 */
-    .ContentBlock > p {
-        color: black;
-    }
-    .ContentBlock > img {
-    width: auto;
-    height: auto;
-    position: relative;
-    display: block; /* 添加这行以确保垂直居中效果 */
-}
-
-</style>
+    </style>
+</head>
 <body>
     <h1>Angular 範例專案 angular_front_end<img id="angular_icon" src="document_src/angular_icon.png" alt="無法顯示圖片"></h1>
     <h2>一、建置Angular開發環境</h2>
@@ -96,5 +103,11 @@ SSG適用於以內容為中心的網站、博客或文檔，其中內容可以�
         <img src="document_src/angular_launch_view.png"></img>
         <h2>大功告成</h2>
     </div>
-</body>
+    
 
+    
+    
+      
+    
+</body>
+</html>
