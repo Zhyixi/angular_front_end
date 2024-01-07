@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bom_frontend": {
+    "bomFrontend": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/bom_frontend",
+            "outputPath": "dist/bom-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bom_frontend:build:production"
+              "buildTarget": "bomFrontend:build:production"
             },
             "development": {
-              "buildTarget": "bom_frontend:build:development"
+              "buildTarget": "bomFrontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "bom_frontend:build"
+            "buildTarget": "bomFrontend:build"
           }
         },
         "test": {
@@ -98,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "37b8bd9f-6008-42ff-b420-cfd7a813a244"
+    "analytics": "2ec6e954-1c5f-4d63-b117-2e576a6c243d"
   }
 }
